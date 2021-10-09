@@ -4,7 +4,23 @@
         {
             "name": "client",
             "image": "erlds5518/multi-client",
-            "hostname": "client"
+            "hostname": "client",
+            "essential": false
+        },
+        {
+            "name": "server",
+            "image": "erlds5518/multi-server",
+            "hostname": "api",
+            "essential": false
+        },
+        {
+            "name": "worker",
+            "image": "erlds5518/multi-worker",
+            "hostname": "worker",
+            "essential": false            
+        },
+        {
+            
         }
     ]
 }
